@@ -1,0 +1,95 @@
+
+
+
+.boxCF{
+    height: 72%;
+    width: 25%;
+    min-width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2c2f33;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.boxCF h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.boxCF p{
+    color: gray;
+    font-weight: 20;
+}
+
+.boxCF input[type = "name"],.boxCF input[type = "email"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #99aab5;
+    padding: 14px 10px;
+    width: 90%;
+    outline: none;
+    color: white;
+    border-radius: 15px;
+}
+
+.boxCF input[type = "password"]{
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #99aab5;
+    padding: 14px 10px;
+    width: 90%;
+    outline: none;
+    color: white;
+    border-radius: 15px;
+}
+
+.boxCF input[type = "name"]:focus,.boxCF input[type = "password"]:focus,.boxCF input[type = "email"]:focus{
+    border-color: #7289da;
+}
+
+.boxCF input[type = "submit"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #99aab5;
+    padding: 14px 40px;
+    outline: none;
+    color: gray;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.boxCF input[type = "submit"]:hover{
+    border-color: #7289da;
+    background: #7289da;
+}
+
+.boxCF button[type = "gen-passwd"]{
+    background: none;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    border: 2px solid #99aab5;
+    padding: 3px 10px;
+    width: 50%;
+    outline: none;
+    color: gray;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.boxCF button[type = "gen-passwd"]:hover{
+    border-color: #7289da;
+    background: #7289da;
+}

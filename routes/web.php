@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('forum');
+});
+
+Route::get('/inloggen', function () {
+    return view('inloggen');
+});
+
+Route::get('/aanmelden', function () {
+    return view('aanmelden');
 });
