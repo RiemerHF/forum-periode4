@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\ApiThreadController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
+
+Route::get('/threads', [ App\Http\Controllers\ThreadController::class, 'index']);
+//Route::post('/threads/create', [ ApiThreadController::class, 'store']);
+Route::post('/threads/create', [ App\Http\Controllers\ThreadController::class, 'store']);

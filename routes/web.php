@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('forum');
-});
+});*/
+
+Route::get('/', \App\Http\Controllers\ThreadController::class, 'index');
 
 Route::get('/inloggen', function () {
     return view('inloggen');
@@ -24,3 +26,12 @@ Route::get('/inloggen', function () {
 Route::get('/aanmelden', function () {
     return view('aanmelden');
 });
+
+Route::get('/dev/users', \App\Http\Controllers\AllUsersController::class);
+
+Route::get('/threads', [ App\Http\Controllers\ThreadController::class, 'index']);
+
+Route::post('/threads/create', [ App\Http\Controllers\ThreadController::class, 'store']);
+
+Route::post('/create-user', [ \App\Http\Controllers\AllUsersController::class, 'create']);
+Route::post('/login-user', [ \App\Http\Controllers\AllUsersController::class, 'login']);
